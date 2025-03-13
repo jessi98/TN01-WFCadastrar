@@ -34,7 +34,20 @@
             btnSalvar = new Button();
             label1 = new Label();
             lblCep = new Label();
-            maskedTextBox1 = new MaskedTextBox();
+            mtbCep = new MaskedTextBox();
+            lblLogradouro = new Label();
+            txtLogradouro = new TextBox();
+            txtNumero = new TextBox();
+            lblNumero = new Label();
+            txtComplemento = new TextBox();
+            lblComplemento = new Label();
+            txtBairro = new TextBox();
+            lblBairro = new Label();
+            txtCidade = new TextBox();
+            lblCidade = new Label();
+            lblUf = new Label();
+            cbxUf = new ComboBox();
+            chkSemNumero = new CheckBox();
             SuspendLayout();
             // 
             // lblNomeCompleto
@@ -60,7 +73,7 @@
             btnSalvar.Location = new Point(169, 400);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(75, 34);
-            btnSalvar.TabIndex = 8;
+            btnSalvar.TabIndex = 10;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextAlign = ContentAlignment.MiddleRight;
             btnSalvar.UseVisualStyleBackColor = true;
@@ -83,20 +96,143 @@
             lblCep.TabIndex = 10;
             lblCep.Text = "CEP:";
             // 
-            // maskedTextBox1
+            // mtbCep
             // 
-            maskedTextBox1.Location = new Point(21, 157);
-            maskedTextBox1.Mask = "00000-999";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(59, 23);
-            maskedTextBox1.TabIndex = 11;
+            mtbCep.Location = new Point(21, 157);
+            mtbCep.Mask = "00000-999";
+            mtbCep.Name = "mtbCep";
+            mtbCep.Size = new Size(59, 23);
+            mtbCep.TabIndex = 2;
+            // 
+            // lblLogradouro
+            // 
+            lblLogradouro.AutoSize = true;
+            lblLogradouro.Location = new Point(21, 202);
+            lblLogradouro.Name = "lblLogradouro";
+            lblLogradouro.Size = new Size(72, 15);
+            lblLogradouro.TabIndex = 12;
+            lblLogradouro.Text = "Logradouro:";
+            // 
+            // txtLogradouro
+            // 
+            txtLogradouro.Location = new Point(17, 220);
+            txtLogradouro.Name = "txtLogradouro";
+            txtLogradouro.Size = new Size(198, 23);
+            txtLogradouro.TabIndex = 3;
+            // 
+            // txtNumero
+            // 
+            txtNumero.Location = new Point(221, 220);
+            txtNumero.Name = "txtNumero";
+            txtNumero.Size = new Size(83, 23);
+            txtNumero.TabIndex = 4;
+            // 
+            // lblNumero
+            // 
+            lblNumero.AutoSize = true;
+            lblNumero.Location = new Point(221, 202);
+            lblNumero.Name = "lblNumero";
+            lblNumero.Size = new Size(54, 15);
+            lblNumero.TabIndex = 14;
+            lblNumero.Text = "Número:";
+            // 
+            // txtComplemento
+            // 
+            txtComplemento.Location = new Point(17, 273);
+            txtComplemento.Name = "txtComplemento";
+            txtComplemento.Size = new Size(167, 23);
+            txtComplemento.TabIndex = 6;
+            // 
+            // lblComplemento
+            // 
+            lblComplemento.AutoSize = true;
+            lblComplemento.Location = new Point(21, 255);
+            lblComplemento.Name = "lblComplemento";
+            lblComplemento.Size = new Size(87, 15);
+            lblComplemento.TabIndex = 16;
+            lblComplemento.Text = "Complemento:";
+            // 
+            // txtBairro
+            // 
+            txtBairro.Location = new Point(235, 273);
+            txtBairro.Name = "txtBairro";
+            txtBairro.Size = new Size(167, 23);
+            txtBairro.TabIndex = 7;
+            // 
+            // lblBairro
+            // 
+            lblBairro.AutoSize = true;
+            lblBairro.Location = new Point(239, 255);
+            lblBairro.Name = "lblBairro";
+            lblBairro.Size = new Size(41, 15);
+            lblBairro.TabIndex = 18;
+            lblBairro.Text = "Bairro:";
+            // 
+            // txtCidade
+            // 
+            txtCidade.Location = new Point(17, 327);
+            txtCidade.Name = "txtCidade";
+            txtCidade.Size = new Size(167, 23);
+            txtCidade.TabIndex = 8;
+            // 
+            // lblCidade
+            // 
+            lblCidade.AutoSize = true;
+            lblCidade.Location = new Point(21, 309);
+            lblCidade.Name = "lblCidade";
+            lblCidade.Size = new Size(47, 15);
+            lblCidade.TabIndex = 20;
+            lblCidade.Text = "Cidade:";
+            // 
+            // lblUf
+            // 
+            lblUf.AutoSize = true;
+            lblUf.Location = new Point(239, 309);
+            lblUf.Name = "lblUf";
+            lblUf.Size = new Size(24, 15);
+            lblUf.TabIndex = 22;
+            lblUf.Text = "UF:";
+            // 
+            // cbxUf
+            // 
+            cbxUf.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxUf.FormattingEnabled = true;
+            cbxUf.Items.AddRange(new object[] { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" });
+            cbxUf.Location = new Point(235, 327);
+            cbxUf.Name = "cbxUf";
+            cbxUf.Size = new Size(168, 23);
+            cbxUf.TabIndex = 9;
+            // 
+            // chkSemNumero
+            // 
+            chkSemNumero.AutoSize = true;
+            chkSemNumero.Location = new Point(311, 221);
+            chkSemNumero.Name = "chkSemNumero";
+            chkSemNumero.Size = new Size(101, 19);
+            chkSemNumero.TabIndex = 5;
+            chkSemNumero.Text = "Sem Número?";
+            chkSemNumero.UseVisualStyleBackColor = true;
+            chkSemNumero.CheckedChanged += chkSemNumero_CheckedChanged;
             // 
             // FormCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(428, 467);
-            Controls.Add(maskedTextBox1);
+            Controls.Add(chkSemNumero);
+            Controls.Add(cbxUf);
+            Controls.Add(lblUf);
+            Controls.Add(txtCidade);
+            Controls.Add(lblCidade);
+            Controls.Add(txtBairro);
+            Controls.Add(lblBairro);
+            Controls.Add(txtComplemento);
+            Controls.Add(lblComplemento);
+            Controls.Add(txtNumero);
+            Controls.Add(lblNumero);
+            Controls.Add(txtLogradouro);
+            Controls.Add(lblLogradouro);
+            Controls.Add(mtbCep);
             Controls.Add(lblCep);
             Controls.Add(label1);
             Controls.Add(btnSalvar);
@@ -118,8 +254,20 @@
         private TextBox txtNomeCompleto;
         private Button btnSalvar;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtComplemento;
         private Label lblCep;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox mtbCep;
+        private Label lblLogradouro;
+        private TextBox txtLogradouro;
+        private TextBox txtNumero;
+        private Label lblNumero;
+        private Label lblComplemento;
+        private TextBox txtBairro;
+        private Label lblBairro;
+        private TextBox txtCidade;
+        private Label lblCidade;
+        private Label lblUf;
+        private ComboBox cbxUf;
+        private CheckBox chkSemNumero;
     }
 }
